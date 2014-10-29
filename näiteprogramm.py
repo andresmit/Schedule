@@ -92,7 +92,7 @@ def SRTF(jarjend):
     print(jarg)
     print(kestus)
     return (valjund, keskm_ooteaeg)
-
+"""
 def RR(jarjend):
     valjund = []
     counter = 1
@@ -142,7 +142,7 @@ def RR(jarjend):
     print(jarg)
     print(kestus)
     return (valjund, keskm_ooteaeg)
-        
+        """
 def SJF(jarjend):
     valjund = []
     counter = 1
