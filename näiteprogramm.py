@@ -8,7 +8,7 @@ from tkinter import *
 import tkinter
 from tkinter import ttk
 from tkinter import messagebox
-
+from RR import RR
 
 def puhasta():
     tahvel.delete('all')

@@ -14,7 +14,48 @@ for i in repeat(j):
     
 #töölist, kus saabumine > läbitud aeg.
 #if len töölist > 1:
-    
+
+def SJF(jarjend):
+    sobivad = []
+    väljund = []
+    aeg = -1
+    counter = 0
+    while True:
+        aeg +=1
+        #sobivate protsesside lisamine "readyqueue"-sse
+        for p in sorted jarjend:
+            saabumine = jarjend[p][0]
+            estus = jarjend[p][1]
+             if saabumine =< aeg:
+                 sobivad.add(protsess)
+                 jarjend.remove(p)
+            
+
+             elif saabumine>aeg and sobivad tühi:
+                 väljund add tühik
+             el
+
+        sobivad.sort(key
+        väljund.append(sobivad[0])
+        sobivad.remove(sobivad[0])
+        counter +=1
+        aeg += aeg + kestus
+def RR(järjend):
+    proc_käivad = []
+    väljund = []
+    aeg = -1
+    ajakvant = 1
+    counter = 0
+    while True:
+        aeg +=1
+        #sobivate protsesside lisamine "readyqueue"-sse
+        for p in sorted jarjend:
+            saabumine = jarjend[p][0]
+            estus = jarjend[p][1]
+             if saabumine =< aeg:
+                 proc_käivad.add(protsess)
+                 jarjend.remove(p)
+            
 
 """
 def SJF(jarjend):
@@ -27,8 +68,7 @@ def SJF(jarjend):
     kogu_ooteaeg = 0
     s1 = sorted(jarjend, key = lambda x: (x[0], x[1]))
     for i in range(len(s1)):
-        saabumine = jarjend[p][0]
-        kestus = jarjend[p][1]
+
         if saabumine > jarg:
             valjund.append([" ", saabumine-jarg])
 * CPU scheduler picks the process from the circular/ready queue ,
